@@ -1,5 +1,9 @@
+require("dotenv").config({ path: "./config/.env" });
+require("./config/db");
+
 const express = require("express");
 const app = express();
+const postRoute = require("./routes/post.route");
 
 const cors = require("cors");
 const corsOptions = {
@@ -12,8 +16,9 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-app.get("/", function (req, res) {
-  res.send("Maintenant demarons - Omisify API ");
-});
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.listen(2000, console.log("server 2000 is running"));
+app.use("/api/post", postRoute);
+
+app.listen(3000, console.log("server 3000 is running"));
