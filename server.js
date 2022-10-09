@@ -13,7 +13,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.get("/", function (req, res) {
-  res.send("Omisify api success");
+  res.send("API de Omisify");
 });
 
 app.listen(2000, console.log("server 2000 is running"));
