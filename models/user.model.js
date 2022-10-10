@@ -2,14 +2,18 @@ const mongoose = require("mongoose");
 
 const PostSchema = new mongoose.Schema(
   {
-    username: {
+    name: {
       type: String,
       min: 3,
       max: 20,
       unique: true,
     },
 
-    name: {
+    partnername: {
+      type: String,
+    },
+
+    shortname: {
       type: String,
     },
 
