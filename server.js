@@ -3,7 +3,8 @@ require("./config/db");
 
 const express = require("express");
 const app = express();
-const postRoute = require("./routes/post.route");
+const userRoute = require("./routes/user.route");
+const pointRoute = require("./routes/point.route");
 
 const cors = require("cors");
 const corsOptions = {
@@ -19,6 +20,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api/post", postRoute);
+app.use("/api/user", userRoute);
+app.use("/api/point", pointRoute);
 
-app.listen(3000, console.log("server 3000 is running"));
+app.listen(4000, console.log("server 4000 is running"));
