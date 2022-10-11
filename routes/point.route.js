@@ -11,14 +11,14 @@ const {
 
 const pointRouter = express.Router();
 
-pointRouter.post("/add/September", addSeptember);
+pointRouter.post("/add/september", addSeptember);
 pointRouter.get("/:id", getPointById);
-pointRouter.get("/all/September", allSeptember);
+pointRouter.get("/all/september", allSeptember);
 
-pointRouter.post("/add/October", addOctober);
-pointRouter.get("/all/October", allOctober);
+pointRouter.post("/add/october", addOctober);
+pointRouter.get("/all/october", allOctober);
 
-pointRouter.post("/add/November", addNovember);
-pointRouter.get("/all/November", allNovember);
+pointRouter.post("/add/november", addNovember);
+pointRouter.get("/all/november", allNovember);
 
 module.exports = pointRouter;
