@@ -1,8 +1,13 @@
-const pointModel = require("../models/point.model");
+const septemberModel = require("../models/september.model");
+const octoberModel = require("../models/october.model");
+const novemberModel = require("../models/november.model");
 const ObjectID = require("mongoose").Types.ObjectId;
 
-module.exports.addPoint = async (req, res) => {
-  const newPoint = new pointModel(req.body);
+// september
+// september
+// september
+module.exports.addSeptember = async (req, res) => {
+  const newPoint = new septemberModel(req.body);
   try {
     const savedPoint = await newPoint.save();
     res.status(200).json(savedPoint);
@@ -16,7 +21,7 @@ module.exports.getPointById = async (req, res) => {
     return res.status(400).send("ID unknown : " + req.params.id);
 
   try {
-    pointModel.findById(req.params.id, (err, docs) => {
+    septemberModel.findById(req.params.id, (err, docs) => {
       if (!err) res.status(200).json(docs);
     });
   } catch (err) {
@@ -24,9 +29,53 @@ module.exports.getPointById = async (req, res) => {
   }
 };
 
-module.exports.getAllPoint = async (req, res) => {
+module.exports.allSeptember = async (req, res) => {
   try {
-    const allpoint = await pointModel.find().select();
+    const allpoint = await septemberModel.find().select();
+    res.status(200).json(allpoint);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+};
+
+// October
+// October
+// October
+module.exports.addOctober = async (req, res) => {
+  const newPoint = new octoberModel(req.body);
+  try {
+    const savedPoint = await newPoint.save();
+    res.status(200).json(savedPoint);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+};
+
+module.exports.allOctober = async (req, res) => {
+  try {
+    const allpoint = await octoberModel.find().select();
+    res.status(200).json(allpoint);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+};
+
+// November
+// November
+// November
+module.exports.addNovember = async (req, res) => {
+  const newPoint = new novemberModel(req.body);
+  try {
+    const savedPoint = await newPoint.save();
+    res.status(200).json(savedPoint);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+};
+
+module.exports.allNovember = async (req, res) => {
+  try {
+    const allpoint = await novemberModel.find().select();
     res.status(200).json(allpoint);
   } catch (err) {
     return res.status(500).json(err);
