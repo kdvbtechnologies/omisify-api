@@ -5,6 +5,7 @@ const express = require("express");
 const app = express();
 const userRoute = require("./routes/user.route");
 const pointRoute = require("./routes/point.route");
+const monthRoute = require("./routes/month.route");
 
 const cors = require("cors");
 const corsOptions = {
@@ -22,5 +23,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/user", userRoute);
 app.use("/api/point", pointRoute);
+app.use("/api/month", monthRoute);
 
 app.listen(4000, console.log("server 4000 is running"));

@@ -6,11 +6,11 @@ const PointSchema = new mongoose.Schema(
       type: String,
     },
 
-    postId: {
+    monthId: {
       type: String,
     },
 
-    points: {
+    pcomments: {
       type: String,
     },
 
@@ -18,14 +18,6 @@ const PointSchema = new mongoose.Schema(
       type: String,
     },
 
-    pointsTotal: {
-      type: String,
-    },
-
-    newPoint: {
-      type: Array,
-      default: [],
-    },
   },
   { timestamps: true }
 );
