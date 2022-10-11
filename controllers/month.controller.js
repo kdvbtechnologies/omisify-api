@@ -23,3 +23,12 @@ module.exports.getMonthById = async (req, res) => {
     return res.status(500).json(err);
   }
 };
+
+module.exports.getAllMonth = async (req, res) => {
+  try {
+    const allmonth = await monthModel.find().select();
+    res.status(200).json(allmonth);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+};

@@ -23,3 +23,12 @@ module.exports.getPointById = async (req, res) => {
     return res.status(500).json(err);
   }
 };
+
+module.exports.getAllPoint = async (req, res) => {
+  try {
+    const allpoint = await pointModel.find().select();
+    res.status(200).json(allpoint);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+};
