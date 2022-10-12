@@ -62,6 +62,21 @@ module.exports.getByIdTotalPointSeptember = async (req, res) => {
   }
 };
 
+module.exports.updateTotalPoint = async (req, res) => {
+  if (!ObjectID.isValid(req.params.id))
+    return res.status(400).send("ID unknown : " + req.params.id);
+
+  try {
+    const total = await tseptemberModel.findById(req.params.id);
+    if (total.userId === req.body.userId) {
+      await total.updateOne({ $set: req.body });
+      res.status(200).json("Total uploaded with success");
+    }
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+};
+
 // October
 // October
 // October
