@@ -3,8 +3,10 @@ const {
   addSeptember,
   getPointById,
   allSeptember,
+
   addOctober,
   allOctober,
+
   addNovember,
   allNovember,
 } = require("../controllers/point.controller");

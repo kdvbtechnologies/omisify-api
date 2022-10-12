@@ -13,6 +13,10 @@ const OctoberSchema = new mongoose.Schema(
     dOctober: {
       type: String,
     },
+
+    total: {
+      type: String,
+    },
   },
   { timestamps: true }
 );
