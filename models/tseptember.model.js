@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const tOctoberSchema = new mongoose.Schema(
+const tSeptemberSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
@@ -13,4 +13,4 @@ const tOctoberSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("tOctober2022", tOctoberSchema);
+module.exports = mongoose.model("tSeptember2022", tSeptemberSchema);
