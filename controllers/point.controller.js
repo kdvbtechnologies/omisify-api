@@ -70,7 +70,7 @@ module.exports.updateTotalPoint = async (req, res) => {
     const total = await tseptemberModel.findById(req.params.id);
     if (total.userId === req.body.userId) {
       await total.updateOne({ $set: req.body });
-      res.status(200).json("Total uploaded with success");
+      res.status(200).json("Total updated with success");
     }
   } catch (err) {
     return res.status(500).json(err);
