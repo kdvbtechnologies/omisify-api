@@ -3,6 +3,7 @@ const {
   addSeptember,
   addtSeptember,
   getPointById,
+  getByIdTotalPointSeptember,
   allSeptember,
 
   addOctober,
@@ -16,6 +17,7 @@ const pointRouter = express.Router();
 
 pointRouter.post("/add/september", addSeptember);
 pointRouter.post("/add/tseptember", addtSeptember);
+pointRouter.get("/all/tseptember/:id", getByIdTotalPointSeptember);
 pointRouter.get("/:id", getPointById);
 pointRouter.get("/all/september", allSeptember);
 
