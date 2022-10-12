@@ -1,6 +1,7 @@
 const septemberModel = require("../models/september.model");
 const octoberModel = require("../models/october.model");
 const novemberModel = require("../models/november.model");
+const tseptemberModel = require("../models/tseptember.model");
 const ObjectID = require("mongoose").Types.ObjectId;
 
 // september
@@ -33,6 +34,16 @@ module.exports.allSeptember = async (req, res) => {
   try {
     const allpoint = await septemberModel.find().select();
     res.status(200).json(allpoint);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+};
+
+module.exports.addtSeptember = async (req, res) => {
+  const newPoint = new tseptemberModel(req.body);
+  try {
+    const savedPoint = await newPoint.save();
+    res.status(200).json(savedPoint);
   } catch (err) {
     return res.status(500).json(err);
   }

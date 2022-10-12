@@ -1,6 +1,7 @@
 const express = require("express");
 const {
   addSeptember,
+  addtSeptember,
   getPointById,
   allSeptember,
 
@@ -14,6 +15,7 @@ const {
 const pointRouter = express.Router();
 
 pointRouter.post("/add/september", addSeptember);
+pointRouter.post("/add/tseptember", addtSeptember);
 pointRouter.get("/:id", getPointById);
 pointRouter.get("/all/september", allSeptember);
 
