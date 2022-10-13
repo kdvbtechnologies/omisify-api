@@ -39,15 +39,7 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
-    idtsept: {
-      type: String,
-    },
-
-    idtoct: {
-      type: String,
-    },
-
-    idtnov: {
+    idtotal: {
       type: String,
     },
   },

@@ -38,14 +38,12 @@ module.exports.updateUser = async (req, res) => {
   if (!ObjectID.isValid(req.params.id))
     return res.status(400).send("ID unknown : " + req.params.id);
 
-  const { idtsept, idtoct, idtnov } = req.body;
+  const { idtotal } = req.body;
   try {
     const user = await userModel.findById(req.params.id);
     if (user.userId === req.body.userId) {
       await user.updateOne({
-        idtsept,
-        idtoct,
-        idtnov,
+        idtotal,
       });
       res.status(200).json({ message: "User Infos updated with success !" });
     }
