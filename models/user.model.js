@@ -38,6 +38,18 @@ const UserSchema = new mongoose.Schema(
     email: {
       type: String,
     },
+
+    idtsept: {
+      type: String,
+    },
+
+    idtoct: {
+      type: String,
+    },
+
+    idtnov: {
+      type: String,
+    },
   },
   { timestamps: true }
 );
