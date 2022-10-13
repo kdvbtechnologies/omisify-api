@@ -3,10 +3,12 @@ const {
   addUser,
   getUserById,
   updateUser,
+  login,
 } = require("../controllers/user.controller");
 const userRouter = express.Router();
 
-userRouter.post("/add", addUser);
+userRouter.post("/signup", addUser);
+userRouter.post("/login", login);
 userRouter.get("/:id", getUserById);
 userRouter.put("/update/:id", updateUser);
 

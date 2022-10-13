@@ -11,6 +11,7 @@ const UserSchema = new mongoose.Schema(
 
     partnername: {
       type: String,
+      unique: true,
     },
 
     shortname: {
