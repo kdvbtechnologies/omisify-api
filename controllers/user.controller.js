@@ -96,7 +96,7 @@ module.exports.login = async (req, res) => {
 
     const token = createToken(user);
     res.cookie("jwt", token, { httpOnly: true, maxAge });
-    res.status(200).json({ message: "Connexion reussie !" });
+    res.status(200).json({ message: "Connexion reussie !", id: user._id });
   } catch (err) {
     res.status(400).json(err);
   }
