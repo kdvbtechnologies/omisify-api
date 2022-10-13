@@ -52,7 +52,15 @@ const UserSchema = new mongoose.Schema(
       trim: true,
     },
 
-    idtotal: {
+    idtspet2022: {
+      type: String,
+    },
+
+    idtoct2022: {
+      type: String,
+    },
+
+    idtnov2022: {
       type: String,
     },
   },
