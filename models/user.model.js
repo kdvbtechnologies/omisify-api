@@ -38,6 +38,18 @@ const UserSchema = new mongoose.Schema(
 
     email: {
       type: String,
+      required: true,
+      max: 50,
+      unique: true,
+      lowercase: true,
+      trim: true,
+    },
+
+    password: {
+      type: String,
+      required: true,
+      minLength: 6,
+      trim: true,
     },
 
     idtotal: {
