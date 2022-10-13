@@ -2,8 +2,16 @@ const userModel = require("../models/user.model");
 const ObjectID = require("mongoose").Types.ObjectId;
 
 module.exports.addUser = async (req, res) => {
-  const { name, partnername, shortname, email, dateJoin, country, sex } =
-    req.body;
+  const {
+    name,
+    partnername,
+    shortname,
+    email,
+    password,
+    dateJoin,
+    country,
+    sex,
+  } = req.body;
 
   try {
     const user = await userModel.create({
@@ -11,6 +19,7 @@ module.exports.addUser = async (req, res) => {
       partnername,
       shortname,
       email,
+      password,
       dateJoin,
       country,
       sex,
@@ -38,12 +47,13 @@ module.exports.updateUser = async (req, res) => {
   if (!ObjectID.isValid(req.params.id))
     return res.status(400).send("ID unknown : " + req.params.id);
 
-  const { idtotal } = req.body;
+  const { idtotal, password } = req.body;
   try {
     const user = await userModel.findById(req.params.id);
     if (user.userId === req.body.userId) {
       await user.updateOne({
         idtotal,
+        password,
       });
       res.status(200).json({ message: "User Infos updated with success !" });
     }
