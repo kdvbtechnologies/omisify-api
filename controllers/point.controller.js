@@ -43,7 +43,7 @@ module.exports.addtSeptember = async (req, res) => {
   const newPoint = new tseptemberModel(req.body);
   try {
     const savedPoint = await newPoint.save();
-    res.status(200).json(savedPoint);
+    res.status(200).json({ message: newPoint._id, savedPoint });
   } catch (err) {
     return res.status(500).json(err);
   }
