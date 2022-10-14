@@ -40,7 +40,7 @@ module.exports.addUser = async (req, res) => {
       country,
       sex,
     });
-    res.status(200).json({ message: "Inscription réussi" + user._id });
+    res.status(200).json({ message: "Inscription réussi", id: user._id });
   } catch (err) {
     return res.status(400).json(err);
   }
