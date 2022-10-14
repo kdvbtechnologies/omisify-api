@@ -52,6 +52,31 @@ const UserSchema = new mongoose.Schema(
       trim: true,
     },
 
+    nbretcommentsept2022: {
+      type: String,
+    },
+
+    pointtcommentsept2022: {
+      type: String,
+    },
+
+    gaintcommentsept2022: {
+      type: String,
+    },
+
+    gain: {
+      type: String,
+    },
+
+    pointtsept2022: {
+      type: String,
+    },
+
+    gaintsept2022: {
+      type: String,
+    },
+
+    // ceux ci-dessous ne sont pas utile pour l'instant
     idtsept2022: {
       type: String,
     },
