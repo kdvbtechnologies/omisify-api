@@ -76,6 +76,10 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
+    datedernieremajpage: {
+      type: String,
+    },
+
     // ceux ci-dessous ne sont pas utile pour l'instant
     idtsept2022: {
       type: String,
