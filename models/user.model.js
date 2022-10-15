@@ -52,39 +52,66 @@ const UserSchema = new mongoose.Schema(
       trim: true,
     },
 
-    derniercomment: {
-      type: String,
-    },
+    // comment
+    // comment
+    // comment
 
-    datederniercomment: {
-      type: String,
-    },
-
-    nbretcommentsept2022: {
-      type: String,
-    },
-
+    // point
     pointtcommentsept2022: {
       type: String,
     },
 
+    pointtcomment2022: {
+      type: String,
+    },
+
+    pointtcommentlife: {
+      type: String,
+    },
+
+    pointtlife: {
+      type: String,
+    },
+
+    // gain
     gaintcommentsept2022: {
       type: String,
     },
 
-    gain: {
+    gaintcomment2022: {
       type: String,
     },
 
-    pointtsept2022: {
+    gaintcommentlife: {
       type: String,
     },
 
-    gaintsept2022: {
+    gaintlife: {
       type: String,
     },
 
-    datedernieremajpage: {
+    // number
+    numbertcommentsept2022: {
+      type: String,
+    },
+
+    numbertcomment2022: {
+      type: String,
+    },
+
+    numbertcommentlife: {
+      type: String,
+    },
+
+    date: {
+      type: String,
+    },
+
+    time: {
+      type: String,
+    },
+
+    commentrecent: {
       type: String,
     },
 
