@@ -69,6 +69,14 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
+    pointtlifesept2022: {
+      type: String,
+    },
+
+    pointtlife2022: {
+      type: String,
+    },
+
     pointtlife: {
       type: String,
     },
@@ -83,6 +91,14 @@ const UserSchema = new mongoose.Schema(
     },
 
     gaintcommentlife: {
+      type: String,
+    },
+
+    gaintlifesept2022: {
+      type: String,
+    },
+
+    gaintlife2022: {
       type: String,
     },
 
