@@ -455,7 +455,9 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
-    pwirecent,
+    pwirecent: {
+      type: String,
+    },
   },
   { timestamps: true }
 );
