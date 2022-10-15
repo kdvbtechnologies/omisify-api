@@ -228,6 +228,13 @@ module.exports.updateUser = async (req, res) => {
         time,
         commentrecent,
 
+        pointtlifesept2022,
+        pointtlife2022,
+        pointtlife,
+        gaintlifesept2022,
+        gaintlife2022,
+        gaintlife,
+
         // email
         pointtemailsept2022,
         pointtemail2022,
