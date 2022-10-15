@@ -82,6 +82,10 @@ module.exports.updateUser = async (req, res) => {
     numbertcommentsept2022,
     numbertcomment2022,
     numbertcommentlife,
+
+    date,
+    time,
+    commentrecent,
   } = req.body;
   try {
     const user = await userModel.findById(req.params.id);
@@ -105,6 +109,10 @@ module.exports.updateUser = async (req, res) => {
         numbertcommentsept2022,
         numbertcomment2022,
         numbertcommentlife,
+
+        date,
+        time,
+        commentrecent,
       });
       res.status(200).json({
         message: "User Infos updated with success !",
