@@ -106,7 +106,12 @@ module.exports.updateUser = async (req, res) => {
         numbertcomment2022,
         numbertcommentlife,
       });
-      res.status(200).json({ message: "User Infos updated with success !" });
+      res
+        .status(200)
+        .json({
+          message: "User Infos updated with success !",
+          pointtlifesept2022: user.pointtlifesept2022,
+        });
     }
   } catch (err) {
     res.status(500).json(err);
