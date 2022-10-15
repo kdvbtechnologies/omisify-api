@@ -86,6 +86,126 @@ module.exports.updateUser = async (req, res) => {
     date,
     time,
     commentrecent,
+
+    // email
+    pointtemailsept2022,
+    pointtemail2022,
+    pointtemaillife,
+
+    gaintemailsept2022,
+    gaintemail2022,
+    gaintemaillife,
+
+    numbertemailsept2022,
+    numbertemail2022,
+    numbertemaillife,
+
+    emailrecent,
+
+    // data likecomment
+    pointtlikecommentsept2022,
+    pointtlikecomment2022,
+    pointtlikecommentlife,
+
+    gaintlikecommentsept2022,
+    gaintlikecomment2022,
+    gaintlikecommentlife,
+
+    numbertlikecommentsept2022,
+    numbertlikecomment2022,
+    numbertlikecommentlife,
+
+    likecommentrecent,
+
+    // data likepublication
+    pointtlikepublicationsept2022,
+    pointtlikepublication2022,
+    pointtlikepublicationlife,
+
+    gaintlikepublicationsept2022,
+    gaintlikepublication2022,
+    gaintlikepublicationlife,
+
+    numbertlikepublicationsept2022,
+    numbertlikepublication2022,
+    numbertlikepublicationlife,
+
+    likepublicationrecent,
+
+    // data m10k
+    pointtm10ksept2022,
+    pointtm10k2022,
+    pointtm10klife,
+
+    gaintm10ksept2022,
+    gaintm10k2022,
+    gaintm10klife,
+
+    numbertm10ksept2022,
+    numbertm10k2022,
+    numbertm10klife,
+
+    m10krecent,
+
+    // data message
+    pointtmessagesept2022,
+    pointtmessage2022,
+    pointtmessagelife,
+
+    gaintmessagesept2022,
+    gaintmessage2022,
+    gaintmessagelife,
+
+    numbertmessagesept2022,
+    numbertmessage2022,
+    numbertmessagelife,
+
+    messagerecent,
+
+    // data mwi
+    pointtmwisept2022,
+    pointtmwi2022,
+    pointtmwilife,
+
+    gaintmwisept2022,
+    gaintmwi2022,
+    gaintmwilife,
+
+    numbertmwisept2022,
+    numbertmwi2022,
+    numbertmwilife,
+
+    mwirecent,
+
+    // data publication
+    pointtpublicationsept2022,
+    pointtpublication2022,
+    pointtpublicationlife,
+
+    gaintpublicationsept2022,
+    gaintpublication2022,
+    gaintpublicationlife,
+
+    numbertpublicationsept2022,
+    numbertpublication2022,
+    numbertpublicationlife,
+
+    publicationrecent,
+
+    // data pwi
+    pointtpwisept2022,
+    pointtpwi2022,
+    pointtpwilife,
+
+    gaintpwisept2022,
+    gaintpwi2022,
+    gaintpwilife,
+
+    numbertpwisept2022,
+    numbertpwi2022,
+    numbertpwilife,
+
+    pwirecent,
   } = req.body;
   try {
     const user = await userModel.findById(req.params.id);
@@ -95,16 +215,10 @@ module.exports.updateUser = async (req, res) => {
         pointtcommentsept2022,
         pointtcomment2022,
         pointtcommentlife,
-        pointtlifesept2022,
-        pointtlife2022,
-        pointtlife,
 
         gaintcommentsept2022,
         gaintcomment2022,
         gaintcommentlife,
-        gaintlifesept2022,
-        gaintlife2022,
-        gaintlife,
 
         numbertcommentsept2022,
         numbertcomment2022,
@@ -113,6 +227,126 @@ module.exports.updateUser = async (req, res) => {
         date,
         time,
         commentrecent,
+
+        // email
+        pointtemailsept2022,
+        pointtemail2022,
+        pointtemaillife,
+
+        gaintemailsept2022,
+        gaintemail2022,
+        gaintemaillife,
+
+        numbertemailsept2022,
+        numbertemail2022,
+        numbertemaillife,
+
+        emailrecent,
+
+        // data likecomment
+        pointtlikecommentsept2022,
+        pointtlikecomment2022,
+        pointtlikecommentlife,
+
+        gaintlikecommentsept2022,
+        gaintlikecomment2022,
+        gaintlikecommentlife,
+
+        numbertlikecommentsept2022,
+        numbertlikecomment2022,
+        numbertlikecommentlife,
+
+        likecommentrecent,
+
+        // data likepublication
+        pointtlikepublicationsept2022,
+        pointtlikepublication2022,
+        pointtlikepublicationlife,
+
+        gaintlikepublicationsept2022,
+        gaintlikepublication2022,
+        gaintlikepublicationlife,
+
+        numbertlikepublicationsept2022,
+        numbertlikepublication2022,
+        numbertlikepublicationlife,
+
+        likepublicationrecent,
+
+        // data m10k
+        pointtm10ksept2022,
+        pointtm10k2022,
+        pointtm10klife,
+
+        gaintm10ksept2022,
+        gaintm10k2022,
+        gaintm10klife,
+
+        numbertm10ksept2022,
+        numbertm10k2022,
+        numbertm10klife,
+
+        m10krecent,
+
+        // data message
+        pointtmessagesept2022,
+        pointtmessage2022,
+        pointtmessagelife,
+
+        gaintmessagesept2022,
+        gaintmessage2022,
+        gaintmessagelife,
+
+        numbertmessagesept2022,
+        numbertmessage2022,
+        numbertmessagelife,
+
+        messagerecent,
+
+        // data mwi
+        pointtmwisept2022,
+        pointtmwi2022,
+        pointtmwilife,
+
+        gaintmwisept2022,
+        gaintmwi2022,
+        gaintmwilife,
+
+        numbertmwisept2022,
+        numbertmwi2022,
+        numbertmwilife,
+
+        mwirecent,
+
+        // data publication
+        pointtpublicationsept2022,
+        pointtpublication2022,
+        pointtpublicationlife,
+
+        gaintpublicationsept2022,
+        gaintpublication2022,
+        gaintpublicationlife,
+
+        numbertpublicationsept2022,
+        numbertpublication2022,
+        numbertpublicationlife,
+
+        publicationrecent,
+
+        // data pwi
+        pointtpwisept2022,
+        pointtpwi2022,
+        pointtpwilife,
+
+        gaintpwisept2022,
+        gaintpwi2022,
+        gaintpwilife,
+
+        numbertpwisept2022,
+        numbertpwi2022,
+        numbertpwilife,
+
+        pwirecent,
       });
       res.status(200).json({
         message: "User Infos updated with success !",
