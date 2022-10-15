@@ -52,6 +52,14 @@ const UserSchema = new mongoose.Schema(
       trim: true,
     },
 
+    derniercomment: {
+      type: String,
+    },
+
+    datederniercomment: {
+      type: String,
+    },
+
     nbretcommentsept2022: {
       type: String,
     },
