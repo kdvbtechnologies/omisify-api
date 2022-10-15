@@ -63,13 +63,48 @@ module.exports.updateUser = async (req, res) => {
   if (!ObjectID.isValid(req.params.id))
     return res.status(400).send("ID unknown : " + req.params.id);
 
-  const { password, idtsept2022 } = req.body;
+  const {
+    password,
+    pointtcommentsept2022,
+    pointtcomment2022,
+    pointtcommentlife,
+    pointtlifesept2022,
+    pointtlife2022,
+    pointtlife,
+
+    gaintcommentsept2022,
+    gaintcomment2022,
+    gaintcommentlife,
+    gaintlifesept2022,
+    gaintlife2022,
+    gaintlife,
+
+    numbertcommentsept2022,
+    numbertcomment2022,
+    numbertcommentlife,
+  } = req.body;
   try {
     const user = await userModel.findById(req.params.id);
     if (user.userId === req.body.userId) {
       await user.updateOne({
         password,
-        idtsept2022,
+        pointtcommentsept2022,
+        pointtcomment2022,
+        pointtcommentlife,
+        pointtlifesept2022,
+        pointtlife2022,
+        pointtlife,
+
+        gaintcommentsept2022,
+        gaintcomment2022,
+        gaintcommentlife,
+        gaintlifesept2022,
+        gaintlife2022,
+        gaintlife,
+
+        numbertcommentsept2022,
+        numbertcomment2022,
+        numbertcommentlife,
       });
       res.status(200).json({ message: "User Infos updated with success !" });
     }
