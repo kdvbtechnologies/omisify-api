@@ -207,11 +207,14 @@ module.exports.updateUser = async (req, res) => {
 
     pwirecent,
   } = req.body;
+
+  const hashedPassword = bcryptjs.hashSync(password);
+
   try {
     const user = await userModel.findById(req.params.id);
     if (user.userId === req.body.userId) {
       await user.updateOne({
-        password,
+        password: hashedPassword,
         pointtcommentsept2022,
         pointtcomment2022,
         pointtcommentlife,
