@@ -26,5 +26,3 @@ app.use("/api/point", pointRoute);
 app.use("/api/panel", panelRoute);
 
 app.listen(4000, console.log("server 4000 is running"));
-
-module.exports = app;
