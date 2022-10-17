@@ -26,10 +26,6 @@ const PanelSchema = new mongoose.Schema(
 
     email: {
       type: String,
-      max: 50,
-      unique: true,
-      lowercase: true,
-      trim: true,
     },
 
     // comment

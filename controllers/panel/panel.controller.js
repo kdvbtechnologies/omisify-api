@@ -7,6 +7,7 @@ module.exports.add = async (req, res) => {
     const savenow = await addnow.save();
     res.status(200).json(savenow);
   } catch (err) {
+    console.log(err);
     return res.status(500).json(err);
   }
 };
