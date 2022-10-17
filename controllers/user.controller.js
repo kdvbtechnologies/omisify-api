@@ -59,25 +59,101 @@ module.exports.getUserById = async (req, res) => {
   }
 };
 
+module.exports.updateComment = async (req, res) => {
+  if (!ObjectID.isValid(req.params.id))
+    return res.status(400).send("ID unknown : " + req.params.id);
+
+  const {
+    // total life
+    pointtlifesept2022,
+    pointtlife2022,
+    pointtlife,
+
+    gaintlifesept2022,
+    gaintlife2022,
+    gaintlife,
+
+    // comment
+    pointtcommentsept2022,
+    pointtcomment2022,
+    pointtcommentlife,
+
+    gaintcommentsept2022,
+    gaintcomment2022,
+    gaintcommentlife,
+
+    numbertcommentsept2022,
+    numbertcomment2022,
+    numbertcommentlife,
+
+    date,
+    time,
+    commentrecent,
+  } = req.body;
+
+  try {
+    const user = await userModel.findById(req.params.id);
+    if (user.userId === req.body.userId) {
+      await user.updateOne({
+        // total life
+        pointtlifesept2022,
+        pointtlife2022,
+        pointtlife,
+
+        gaintlifesept2022,
+        gaintlife2022,
+        gaintlife,
+
+        // comment
+        pointtcommentsept2022,
+        pointtcomment2022,
+        pointtcommentlife,
+
+        gaintcommentsept2022,
+        gaintcomment2022,
+        gaintcommentlife,
+
+        numbertcommentsept2022,
+        numbertcomment2022,
+        numbertcommentlife,
+
+        date,
+        time,
+        commentrecent,
+      });
+      res.status(200).json({
+        message: "User Infos updated with success !",
+        pointtcommentlife: user.pointtcommentlife,
+        name: user.name,
+      });
+    }
+  } catch (err) {
+    res.status(500).json(err);
+  }
+};
+
 module.exports.updateUser = async (req, res) => {
   if (!ObjectID.isValid(req.params.id))
     return res.status(400).send("ID unknown : " + req.params.id);
 
   const {
     password,
-    pointtcommentsept2022,
-    pointtcomment2022,
-    pointtcommentlife,
+
     pointtlifesept2022,
     pointtlife2022,
     pointtlife,
 
-    gaintcommentsept2022,
-    gaintcomment2022,
-    gaintcommentlife,
     gaintlifesept2022,
     gaintlife2022,
     gaintlife,
+
+    pointtcommentsept2022,
+    pointtcomment2022,
+    pointtcommentlife,
+
+    gaintcommentsept2022,
+    gaintcomment2022,
+    gaintcommentlife,
 
     numbertcommentsept2022,
     numbertcomment2022,
