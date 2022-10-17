@@ -2,20 +2,6 @@ const mongoose = require("mongoose");
 
 const PanelSchema = new mongoose.Schema(
   {
-    name: {
-      type: String,
-      min: 3,
-      max: 20,
-    },
-
-    partnername: {
-      type: String,
-    },
-
-    shortname: {
-      type: String,
-    },
-
     sex: {
       type: String,
     },
