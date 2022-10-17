@@ -452,4 +452,4 @@ const PanelSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("PanelSeptember", PanelSchema);
+module.exports = mongoose.model("PanelSeptember2022", PanelSchema);
