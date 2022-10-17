@@ -10,6 +10,10 @@ const PanelSchema = new mongoose.Schema(
       type: String,
     },
 
+    codewelcome: {
+      type: String,
+    }
+
     /*
     desc: {
       type: String,
