@@ -6,12 +6,10 @@ const PanelSchema = new mongoose.Schema(
       type: String,
       min: 3,
       max: 20,
-      unique: true,
     },
 
     partnername: {
       type: String,
-      unique: true,
     },
 
     shortname: {
