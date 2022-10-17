@@ -360,8 +360,7 @@ module.exports.updateUser = async (req, res) => {
       });
       res.status(200).json({
         message: "User Infos updated with success !",
-        pointtlifesept2022: user.pointtlifesept2022,
-        pointtlife2022: user.pointtlife2022,
+        pointtcommentlife: user.pointtcommentlife,
         name: user.name,
       });
     }
