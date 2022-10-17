@@ -12,6 +12,6 @@ userRouter.post("/signup", addUser);
 userRouter.post("/login", login);
 userRouter.get("/:id", getUserById);
 userRouter.put("/update/:id", updateUser);
-userRouter.put("/update-comment/:id", updateComment);
+userRouter.put("/updatecomment/:id", updateComment);
 
 module.exports = userRouter;
