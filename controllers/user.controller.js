@@ -61,6 +61,16 @@ module.exports.getUserById = async (req, res) => {
   }
 };
 
+module.exports.all = async (req, res) => {
+  try {
+    const all = await userModel.find().select("-password");
+    res.status(200).json(all);
+  } catch (err) {
+    console.log(err);
+    return res.status(500).json(err);
+  }
+};
+
 module.exports.updateComment = async (req, res) => {
   if (!ObjectID.isValid(req.params.id))
     return res.status(400).send("ID unknown : " + req.params.id);
