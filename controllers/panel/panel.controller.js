@@ -20,3 +20,12 @@ module.exports.all = async (req, res) => {
     return res.status(500).json(err);
   }
 };
+
+module.exports.alluser = async (req, res) => {
+  try {
+    const alluser = await userModel.find().select("-password");
+    res.status(200).json(alluser);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+};

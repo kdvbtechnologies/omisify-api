@@ -51,9 +51,11 @@ module.exports.getUserById = async (req, res) => {
     return res.status(400).send("ID unknown : " + req.params.id);
 
   try {
-    userModel.findById(req.params.id, (err, docs) => {
-      if (!err) res.status(200).json(docs);
-    });
+    userModel
+      .findById(req.params.id, (err, docs) => {
+        if (!err) res.status(200).json(docs);
+      })
+      .select("-password");
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -66,6 +68,7 @@ module.exports.updateComment = async (req, res) => {
   const {
     // total life
     codewelcomementor,
+    welcomebonus,
     pointtlifesept2022,
     pointtlife2022,
     pointtlife,
@@ -98,6 +101,7 @@ module.exports.updateComment = async (req, res) => {
       await user.updateOne({
         // total life
         codewelcomementor,
+        welcomebonus,
         pointtlifesept2022,
         pointtlife2022,
         pointtlife,
