@@ -10,7 +10,23 @@ const PanelSchema = new mongoose.Schema(
       type: String,
     },
 
-    codewelcome: {
+    codewelcomementor: {
+      type: String,
+    },
+
+    userId: {
+      type: String,
+    },
+
+    shortname: {
+      type: String,
+    },
+
+    partnername: {
+      type: String,
+    },
+
+    name: {
       type: String,
     },
 
