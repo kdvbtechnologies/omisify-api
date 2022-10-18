@@ -1,4 +1,5 @@
 const panelModel = require("../../models/panel/panel.model");
+const userModel = require("../../models/user.model");
 
 module.exports.add = async (req, res) => {
   const addnow = new panelModel(req.body);
@@ -26,6 +27,7 @@ module.exports.alluser = async (req, res) => {
     const alluser = await userModel.find().select("-password");
     res.status(200).json(alluser);
   } catch (err) {
+    console.log(err);
     return res.status(500).json(err);
   }
 };
