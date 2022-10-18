@@ -65,7 +65,7 @@ module.exports.updateComment = async (req, res) => {
 
   const {
     // total life
-    codewelcome,
+    codewelcomementor,
     pointtlifesept2022,
     pointtlife2022,
     pointtlife,
@@ -97,7 +97,7 @@ module.exports.updateComment = async (req, res) => {
     if (user.userId === req.body.userId) {
       await user.updateOne({
         // total life
-        codewelcome,
+        codewelcomementor,
         pointtlifesept2022,
         pointtlife2022,
         pointtlife,
@@ -127,6 +127,7 @@ module.exports.updateComment = async (req, res) => {
         message: "User Infos updated with success !",
         pointtcommentlife: user.pointtcommentlife,
         name: user.name,
+        codewelcomementor: user.codewelcomementor,
       });
     }
   } catch (err) {
@@ -139,7 +140,7 @@ module.exports.updateUser = async (req, res) => {
     return res.status(400).send("ID unknown : " + req.params.id);
 
   const {
-    codewelcome,
+    codewelcomementor,
     password,
 
     pointtlifesept2022,
@@ -287,13 +288,13 @@ module.exports.updateUser = async (req, res) => {
     pwirecent,
   } = req.body;
 
-  const hashedPassword = await bcryptjs.hashSync(password);
+  const hashedPassword = bcryptjs.hashSync(password);
 
   try {
     const user = await userModel.findById(req.params.id);
     if (user.userId === req.body.userId) {
       await user.updateOne({
-        codewelcome,
+        codewelcomementor,
         password: hashedPassword,
         pointtcommentsept2022,
         pointtcomment2022,
