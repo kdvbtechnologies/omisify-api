@@ -8,6 +8,8 @@ const pointRoute = require("./routes/point.route");
 const panelRoute = require("./routes/panel/panel.route");
 
 const cors = require("cors");
+const paneloctober = require("./routes/panel/paneloctober.route");
+
 const corsOptions = {
   origin: "https://omisify.com",
   credentials: true,
@@ -24,5 +26,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/user", userRoute);
 app.use("/api/point", pointRoute);
 app.use("/api/panel", panelRoute);
+app.use("/api/panel/october", paneloctober);
 
 app.listen(4000, console.log("server 4000 is running"));

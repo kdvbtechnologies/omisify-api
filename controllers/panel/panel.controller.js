@@ -1,12 +1,11 @@
 const panelModel = require("../../models/panel/panel.model");
-const userModel = require("../../models/user.model");
 
 module.exports.add = async (req, res) => {
-  const addnow = new panelModel(req.body);
+  const initialize = new panelModel(req.body);
 
   try {
-    const savenow = await addnow.save();
-    res.status(200).json(savenow);
+    const save = await initialize.save();
+    res.status(200).json(save);
   } catch (err) {
     console.log(err);
     return res.status(500).json(err);
