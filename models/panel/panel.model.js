@@ -2,7 +2,39 @@ const mongoose = require("mongoose");
 
 const PanelSchema = new mongoose.Schema(
   {
-    sex: {
+    paymentmethod: {
+      type: String,
+    },
+
+    genre: {
+      type: String,
+    },
+
+    birthcountry: {
+      type: String,
+    },
+
+    dateofbirth: {
+      type: String,
+    },
+
+    age: {
+      type: String,
+    },
+
+    groupwhatsapp: {
+      type: String,
+    },
+
+    grouptelegram: {
+      type: String,
+    },
+
+    numberwhatsapp: {
+      type: String,
+    },
+
+    numbertelegram: {
       type: String,
     },
 

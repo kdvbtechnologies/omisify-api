@@ -30,7 +30,19 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
-    sex: {
+    paymentmethod: {
+      type: String,
+    },
+
+    birthcountry: {
+      type: String,
+    },
+
+    dateofbirth: {
+      type: String,
+    },
+
+    genre: {
       type: String,
     },
 
@@ -38,11 +50,25 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
-    /*
-    desc: {
+    age: {
       type: String,
-      max: 500,
-    },*/
+    },
+
+    groupwhatsapp: {
+      type: String,
+    },
+
+    grouptelegram: {
+      type: String,
+    },
+
+    numberwhatsapp: {
+      type: String,
+    },
+
+    numbertelegram: {
+      type: String,
+    },
 
     dateJoin: {
       type: String,
