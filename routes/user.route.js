@@ -4,6 +4,7 @@ const {
   getUserById,
   all,
   updateUser,
+  updateUserInfos,
   login,
   updateComment,
 } = require("../controllers/user.controller");
@@ -14,6 +15,7 @@ userRouter.post("/login", login);
 userRouter.get("/:id", getUserById);
 userRouter.get("/", all);
 userRouter.put("/update/:id", updateUser);
+userRouter.put("/updateuserinfos/:id", updateUserInfos);
 userRouter.put("/updatecomment/:id", updateComment);
 
 module.exports = userRouter;
