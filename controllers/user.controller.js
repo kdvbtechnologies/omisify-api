@@ -71,6 +71,59 @@ module.exports.all = async (req, res) => {
   }
 };
 
+module.exports.updateUserInfos = async (req, res) => {
+  if (!ObjectID.isValid(req.params.id))
+    return res.status(400).send("ID unknown : " + req.params.id);
+
+  const {
+    name,
+    shortname,
+    partnername,
+    genre,
+    age,
+    country,
+    birthcountry,
+    dateofbirth,
+    paymentmethod,
+    email,
+    codewelcome,
+    groupwhatsapp,
+    grouptelegram,
+    numbertelegram,
+    numberwhatsapp,
+  } = req.body;
+
+  try {
+    const user = await userModel.findById(req.params.id);
+    if (user.userId === req.body.userId) {
+      await user.updateOne({
+        name,
+        shortname,
+        partnername,
+        genre,
+        age,
+        country,
+        birthcountry,
+        dateofbirth,
+        paymentmethod,
+        email,
+        codewelcome,
+        groupwhatsapp,
+        grouptelegram,
+        numbertelegram,
+        numberwhatsapp,
+      });
+      res.status(200).json({
+        message: "User infos updated with success",
+        name: user.name,
+      });
+    }
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+};
+
 module.exports.updateComment = async (req, res) => {
   if (!ObjectID.isValid(req.params.id))
     return res.status(400).send("ID unknown : " + req.params.id);
@@ -138,7 +191,7 @@ module.exports.updateComment = async (req, res) => {
         commentrecent,
       });
       res.status(200).json({
-        message: "User Infos updated with success !",
+        message: "Comment data updated with success !",
         pointtcommentlife: user.pointtcommentlife,
         name: user.name,
         codewelcomementor: user.codewelcomementor,
@@ -454,7 +507,7 @@ module.exports.updateUser = async (req, res) => {
         pwirecent,
       });
       res.status(200).json({
-        message: "User Infos updated with success !",
+        message: "Password updated with success !",
         pointtcommentlife: user.pointtcommentlife,
         name: user.name,
       });
