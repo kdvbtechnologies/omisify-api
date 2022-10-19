@@ -22,6 +22,10 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
+    codewelcome: {
+      type: String,
+    },
+
     welcomebonus: {
       type: String,
     },
