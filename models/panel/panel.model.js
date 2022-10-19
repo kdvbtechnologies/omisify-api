@@ -50,6 +50,10 @@ const PanelSchema = new mongoose.Schema(
       type: String,
     },
 
+    generositydays: {
+      type: String,
+    },
+
     userId: {
       type: String,
     },

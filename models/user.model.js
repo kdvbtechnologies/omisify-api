@@ -30,6 +30,10 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
+    generositydays: {
+      type: String,
+    },
+
     paymentmethod: {
       type: String,
     },
