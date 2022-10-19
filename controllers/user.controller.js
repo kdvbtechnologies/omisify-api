@@ -122,6 +122,7 @@ module.exports.updateUserInfos = async (req, res) => {
       res.status(200).json({
         message: "User infos updated with success",
         name: user.name,
+        generositydays: user.generositydays,
       });
     }
   } catch (err) {
