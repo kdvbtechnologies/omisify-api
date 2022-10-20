@@ -92,6 +92,9 @@ module.exports.updateUserInfos = async (req, res) => {
     numbertelegram,
     numberwhatsapp,
 
+    codewelcomementor,
+    welcomebonus,
+
     // generosity days
     generositydays,
   } = req.body;
@@ -116,6 +119,9 @@ module.exports.updateUserInfos = async (req, res) => {
         numbertelegram,
         numberwhatsapp,
 
+        codewelcomementor,
+        welcomebonus,
+
         // generosity days
         generositydays,
       });
@@ -137,8 +143,7 @@ module.exports.updateComment = async (req, res) => {
 
   const {
     // total life
-    codewelcomementor,
-    welcomebonus,
+
     pointtlifesept2022,
     pointtlife2022,
     pointtlife,
@@ -170,8 +175,6 @@ module.exports.updateComment = async (req, res) => {
     if (user.userId === req.body.userId) {
       await user.updateOne({
         // total life
-        codewelcomementor,
-        welcomebonus,
         pointtlifesept2022,
         pointtlife2022,
         pointtlife,
