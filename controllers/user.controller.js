@@ -144,24 +144,24 @@ module.exports.updateComment = async (req, res) => {
   const {
     // total life
 
-    pointtlifesept2022,
+    pointtlifeoct2022,
     pointtlife2022,
     pointtlife,
 
-    gaintlifesept2022,
+    gaintlifeoct2022,
     gaintlife2022,
     gaintlife,
 
     // comment
-    pointtcommentsept2022,
+    pointtcommentoct2022,
     pointtcomment2022,
     pointtcommentlife,
 
-    gaintcommentsept2022,
+    gaintcommentoct2022,
     gaintcomment2022,
     gaintcommentlife,
 
-    numbertcommentsept2022,
+    numbertcommentoct2022,
     numbertcomment2022,
     numbertcommentlife,
 
@@ -175,24 +175,24 @@ module.exports.updateComment = async (req, res) => {
     if (user.userId === req.body.userId) {
       await user.updateOne({
         // total life
-        pointtlifesept2022,
+        pointtlifeoct2022,
         pointtlife2022,
         pointtlife,
 
-        gaintlifesept2022,
+        gaintlifeoct2022,
         gaintlife2022,
         gaintlife,
 
         // comment
-        pointtcommentsept2022,
+        pointtcommentoct2022,
         pointtcomment2022,
         pointtcommentlife,
 
-        gaintcommentsept2022,
+        gaintcommentoct2022,
         gaintcomment2022,
         gaintcommentlife,
 
-        numbertcommentsept2022,
+        numbertcommentoct2022,
         numbertcomment2022,
         numbertcommentlife,
 
@@ -220,23 +220,23 @@ module.exports.updateUser = async (req, res) => {
     codewelcomementor,
     password,
 
-    pointtlifesept2022,
+    pointtlifeoct2022,
     pointtlife2022,
     pointtlife,
 
-    gaintlifesept2022,
+    gaintlifeoct2022,
     gaintlife2022,
     gaintlife,
 
-    pointtcommentsept2022,
+    pointtcommentoct2022,
     pointtcomment2022,
     pointtcommentlife,
 
-    gaintcommentsept2022,
+    gaintcommentoct2022,
     gaintcomment2022,
     gaintcommentlife,
 
-    numbertcommentsept2022,
+    numbertcommentoct2022,
     numbertcomment2022,
     numbertcommentlife,
 
@@ -245,120 +245,120 @@ module.exports.updateUser = async (req, res) => {
     commentrecent,
 
     // email
-    pointtemailsept2022,
+    pointtemailoct2022,
     pointtemail2022,
     pointtemaillife,
 
-    gaintemailsept2022,
+    gaintemailoct2022,
     gaintemail2022,
     gaintemaillife,
 
-    numbertemailsept2022,
+    numbertemailoct2022,
     numbertemail2022,
     numbertemaillife,
 
     emailrecent,
 
     // data likecomment
-    pointtlikecommentsept2022,
+    pointtlikecommentoct2022,
     pointtlikecomment2022,
     pointtlikecommentlife,
 
-    gaintlikecommentsept2022,
+    gaintlikecommentoct2022,
     gaintlikecomment2022,
     gaintlikecommentlife,
 
-    numbertlikecommentsept2022,
+    numbertlikecommentoct2022,
     numbertlikecomment2022,
     numbertlikecommentlife,
 
     likecommentrecent,
 
     // data likepublication
-    pointtlikepublicationsept2022,
+    pointtlikepublicationoct2022,
     pointtlikepublication2022,
     pointtlikepublicationlife,
 
-    gaintlikepublicationsept2022,
+    gaintlikepublicationoct2022,
     gaintlikepublication2022,
     gaintlikepublicationlife,
 
-    numbertlikepublicationsept2022,
+    numbertlikepublicationoct2022,
     numbertlikepublication2022,
     numbertlikepublicationlife,
 
     likepublicationrecent,
 
     // data m10k
-    pointtm10ksept2022,
+    pointtm10koct2022,
     pointtm10k2022,
     pointtm10klife,
 
-    gaintm10ksept2022,
+    gaintm10koct2022,
     gaintm10k2022,
     gaintm10klife,
 
-    numbertm10ksept2022,
+    numbertm10koct2022,
     numbertm10k2022,
     numbertm10klife,
 
     m10krecent,
 
     // data message
-    pointtmessagesept2022,
+    pointtmessageoct2022,
     pointtmessage2022,
     pointtmessagelife,
 
-    gaintmessagesept2022,
+    gaintmessageoct2022,
     gaintmessage2022,
     gaintmessagelife,
 
-    numbertmessagesept2022,
+    numbertmessageoct2022,
     numbertmessage2022,
     numbertmessagelife,
 
     messagerecent,
 
     // data mwi
-    pointtmwisept2022,
+    pointtmwioct2022,
     pointtmwi2022,
     pointtmwilife,
 
-    gaintmwisept2022,
+    gaintmwioct2022,
     gaintmwi2022,
     gaintmwilife,
 
-    numbertmwisept2022,
+    numbertmwioct2022,
     numbertmwi2022,
     numbertmwilife,
 
     mwirecent,
 
     // data publication
-    pointtpublicationsept2022,
+    pointtpublicationoct2022,
     pointtpublication2022,
     pointtpublicationlife,
 
-    gaintpublicationsept2022,
+    gaintpublicationoct2022,
     gaintpublication2022,
     gaintpublicationlife,
 
-    numbertpublicationsept2022,
+    numbertpublicationoct2022,
     numbertpublication2022,
     numbertpublicationlife,
 
     publicationrecent,
 
     // data pwi
-    pointtpwisept2022,
+    pointtpwioct2022,
     pointtpwi2022,
     pointtpwilife,
 
-    gaintpwisept2022,
+    gaintpwioct2022,
     gaintpwi2022,
     gaintpwilife,
 
-    numbertpwisept2022,
+    numbertpwioct2022,
     numbertpwi2022,
     numbertpwilife,
 
@@ -373,15 +373,15 @@ module.exports.updateUser = async (req, res) => {
       await user.updateOne({
         codewelcomementor,
         password: hashedPassword,
-        pointtcommentsept2022,
+        pointtcommentoct2022,
         pointtcomment2022,
         pointtcommentlife,
 
-        gaintcommentsept2022,
+        gaintcommentoct2022,
         gaintcomment2022,
         gaintcommentlife,
 
-        numbertcommentsept2022,
+        numbertcommentoct2022,
         numbertcomment2022,
         numbertcommentlife,
 
@@ -389,128 +389,128 @@ module.exports.updateUser = async (req, res) => {
         time,
         commentrecent,
 
-        pointtlifesept2022,
+        pointtlifeoct2022,
         pointtlife2022,
         pointtlife,
-        gaintlifesept2022,
+        gaintlifeoct2022,
         gaintlife2022,
         gaintlife,
 
         // email
-        pointtemailsept2022,
+        pointtemailoct2022,
         pointtemail2022,
         pointtemaillife,
 
-        gaintemailsept2022,
+        gaintemailoct2022,
         gaintemail2022,
         gaintemaillife,
 
-        numbertemailsept2022,
+        numbertemailoct2022,
         numbertemail2022,
         numbertemaillife,
 
         emailrecent,
 
         // data likecomment
-        pointtlikecommentsept2022,
+        pointtlikecommentoct2022,
         pointtlikecomment2022,
         pointtlikecommentlife,
 
-        gaintlikecommentsept2022,
+        gaintlikecommentoct2022,
         gaintlikecomment2022,
         gaintlikecommentlife,
 
-        numbertlikecommentsept2022,
+        numbertlikecommentoct2022,
         numbertlikecomment2022,
         numbertlikecommentlife,
 
         likecommentrecent,
 
         // data likepublication
-        pointtlikepublicationsept2022,
+        pointtlikepublicationoct2022,
         pointtlikepublication2022,
         pointtlikepublicationlife,
 
-        gaintlikepublicationsept2022,
+        gaintlikepublicationoct2022,
         gaintlikepublication2022,
         gaintlikepublicationlife,
 
-        numbertlikepublicationsept2022,
+        numbertlikepublicationoct2022,
         numbertlikepublication2022,
         numbertlikepublicationlife,
 
         likepublicationrecent,
 
         // data m10k
-        pointtm10ksept2022,
+        pointtm10koct2022,
         pointtm10k2022,
         pointtm10klife,
 
-        gaintm10ksept2022,
+        gaintm10koct2022,
         gaintm10k2022,
         gaintm10klife,
 
-        numbertm10ksept2022,
+        numbertm10koct2022,
         numbertm10k2022,
         numbertm10klife,
 
         m10krecent,
 
         // data message
-        pointtmessagesept2022,
+        pointtmessageoct2022,
         pointtmessage2022,
         pointtmessagelife,
 
-        gaintmessagesept2022,
+        gaintmessageoct2022,
         gaintmessage2022,
         gaintmessagelife,
 
-        numbertmessagesept2022,
+        numbertmessageoct2022,
         numbertmessage2022,
         numbertmessagelife,
 
         messagerecent,
 
         // data mwi
-        pointtmwisept2022,
+        pointtmwioct2022,
         pointtmwi2022,
         pointtmwilife,
 
-        gaintmwisept2022,
+        gaintmwioct2022,
         gaintmwi2022,
         gaintmwilife,
 
-        numbertmwisept2022,
+        numbertmwioct2022,
         numbertmwi2022,
         numbertmwilife,
 
         mwirecent,
 
         // data publication
-        pointtpublicationsept2022,
+        pointtpublicationoct2022,
         pointtpublication2022,
         pointtpublicationlife,
 
-        gaintpublicationsept2022,
+        gaintpublicationoct2022,
         gaintpublication2022,
         gaintpublicationlife,
 
-        numbertpublicationsept2022,
+        numbertpublicationoct2022,
         numbertpublication2022,
         numbertpublicationlife,
 
         publicationrecent,
 
         // data pwi
-        pointtpwisept2022,
+        pointtpwioct2022,
         pointtpwi2022,
         pointtpwilife,
 
-        gaintpwisept2022,
+        gaintpwioct2022,
         gaintpwi2022,
         gaintpwilife,
 
-        numbertpwisept2022,
+        numbertpwioct2022,
         numbertpwi2022,
         numbertpwilife,
 
