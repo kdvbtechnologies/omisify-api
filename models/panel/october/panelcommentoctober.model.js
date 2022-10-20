@@ -54,7 +54,7 @@ const PanelCommentOctoberSchema = new mongoose.Schema(
       type: String,
     },
 
-    gaintcommentoct: {
+    gaintcommentoct2022: {
       type: String,
     },
 
@@ -63,7 +63,7 @@ const PanelCommentOctoberSchema = new mongoose.Schema(
       type: String,
     },
 
-    pointlife2022: {
+    pointtlife2022: {
       type: String,
     },
 
