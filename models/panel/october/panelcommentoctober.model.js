@@ -58,6 +58,10 @@ const PanelCommentOctoberSchema = new mongoose.Schema(
       type: String,
     },
 
+    resultgaincomment: {
+      type: String,
+    },
+
     // life
     pointtlife: {
       type: String,
