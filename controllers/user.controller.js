@@ -144,24 +144,34 @@ module.exports.updateComment = async (req, res) => {
   const {
     // total life
 
+    pointtlifesept2022,
     pointtlifeoct2022,
+    pointtlifenov2022,
     pointtlife2022,
     pointtlife,
 
+    gaintlifesept2022,
     gaintlifeoct2022,
+    gaintlifenov2022,
     gaintlife2022,
     gaintlife,
 
     // comment
+    pointtcommentsept2022,
     pointtcommentoct2022,
+    pointtcommentnov2022,
     pointtcomment2022,
     pointtcommentlife,
 
+    gaintcommentsept2022,
     gaintcommentoct2022,
+    gaintcommentnov2022,
     gaintcomment2022,
     gaintcommentlife,
 
+    numbertcommentsept2022,
     numbertcommentoct2022,
+    numbertcommentnov2022,
     numbertcomment2022,
     numbertcommentlife,
 
@@ -175,24 +185,34 @@ module.exports.updateComment = async (req, res) => {
     if (user.userId === req.body.userId) {
       await user.updateOne({
         // total life
+        pointtlifesept2022,
         pointtlifeoct2022,
+        pointtlifenov2022,
         pointtlife2022,
         pointtlife,
 
+        gaintlifesept2022,
         gaintlifeoct2022,
+        gaintlifenov2022,
         gaintlife2022,
         gaintlife,
 
         // comment
+        pointtcommentsept2022,
         pointtcommentoct2022,
+        pointtcommentnov2022,
         pointtcomment2022,
         pointtcommentlife,
 
+        gaintcommentsept2022,
         gaintcommentoct2022,
+        gaintcommentnov2022,
         gaintcomment2022,
         gaintcommentlife,
 
+        numbertcommentsept2022,
         numbertcommentoct2022,
+        numbertcommentnov2022,
         numbertcomment2022,
         numbertcommentlife,
 

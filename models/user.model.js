@@ -103,6 +103,14 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
+    pointtcommentoct2022: {
+      type: String,
+    },
+
+    pointtcommentnov2022: {
+      type: String,
+    },
+
     pointtcomment2022: {
       type: String,
     },
@@ -112,6 +120,14 @@ const UserSchema = new mongoose.Schema(
     },
 
     pointtlifesept2022: {
+      type: String,
+    },
+
+    pointtlifeoct2022: {
+      type: String,
+    },
+
+    pointtlifenov2022: {
       type: String,
     },
 
@@ -128,6 +144,14 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
+    gaintcommentoct2022: {
+      type: String,
+    },
+
+    gaintcommentnov2022: {
+      type: String,
+    },
+
     gaintcomment2022: {
       type: String,
     },
@@ -137,6 +161,14 @@ const UserSchema = new mongoose.Schema(
     },
 
     gaintlifesept2022: {
+      type: String,
+    },
+
+    gaintlifeoct2022: {
+      type: String,
+    },
+
+    gaintlifenov2022: {
       type: String,
     },
 
@@ -150,6 +182,14 @@ const UserSchema = new mongoose.Schema(
 
     // number
     numbertcommentsept2022: {
+      type: String,
+    },
+
+    numbertcommentoct2022: {
+      type: String,
+    },
+
+    numbertcommentnov2022: {
       type: String,
     },
 
@@ -173,6 +213,8 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
+    // email
+    // email
     // email
     pointtemailsept2022: {
       type: String,
