@@ -232,6 +232,110 @@ module.exports.updateComment = async (req, res) => {
   }
 };
 
+// update email
+// update email
+// update email
+// update email
+// update email
+// update email
+// update email
+// update email
+// update email
+module.exports.updateemail = async (req, res) => {
+  if (!ObjectID.isValid(req.params.id))
+    return res.status(400).send("ID unknown : " + req.params.id);
+
+  const {
+    // total life
+
+    pointtlifesept2022,
+    pointtlifeoct2022,
+    pointtlifenov2022,
+    pointtlife2022,
+    pointtlife,
+
+    gaintlifesept2022,
+    gaintlifeoct2022,
+    gaintlifenov2022,
+    gaintlife2022,
+    gaintlife,
+
+    // email
+    pointtemailsept2022,
+    pointtemailoct2022,
+    pointtemailnov2022,
+    pointtemail2022,
+    pointtemaillife,
+
+    gaintemailsept2022,
+    gaintemailoct2022,
+    gaintemailnov2022,
+    gaintemail2022,
+    gaintemaillife,
+
+    numbertemailsept2022,
+    numbertemailoct2022,
+    numbertemailnov2022,
+    numbertemail2022,
+    numbertemaillife,
+
+    date,
+    time,
+    emailrecent,
+  } = req.body;
+
+  try {
+    const user = await userModel.findById(req.params.id);
+    if (user.userId === req.body.userId) {
+      await user.updateOne({
+        // total life
+        pointtlifesept2022,
+        pointtlifeoct2022,
+        pointtlifenov2022,
+        pointtlife2022,
+        pointtlife,
+
+        gaintlifesept2022,
+        gaintlifeoct2022,
+        gaintlifenov2022,
+        gaintlife2022,
+        gaintlife,
+
+        // email
+        pointtemailsept2022,
+        pointtemailoct2022,
+        pointtemailnov2022,
+        pointtemail2022,
+        pointtemaillife,
+
+        gaintemailsept2022,
+        gaintemailoct2022,
+        gaintemailnov2022,
+        gaintemail2022,
+        gaintemaillife,
+
+        numbertemailsept2022,
+        numbertemailoct2022,
+        numbertemailnov2022,
+        numbertemail2022,
+        numbertemaillife,
+
+        date,
+        time,
+        emailrecent,
+      });
+      res.status(200).json({
+        message: "email data updated with success !",
+        pointtemaillife: user.pointtemaillife,
+        name: user.name,
+        codewelcomementor: user.codewelcomementor,
+      });
+    }
+  } catch (err) {
+    res.status(500).json(err);
+  }
+};
+
 module.exports.updateUser = async (req, res) => {
   if (!ObjectID.isValid(req.params.id))
     return res.status(400).send("ID unknown : " + req.params.id);
