@@ -43,6 +43,10 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
+    bestpartnerbonus: {
+      type: String,
+    },
+
     paymentmethod: {
       type: String,
     },

@@ -97,6 +97,9 @@ module.exports.updateUserInfos = async (req, res) => {
 
     // generosity days
     generositydays,
+
+    // best partner bonus
+    bestpartnerbonus,
   } = req.body;
 
   try {
@@ -124,6 +127,9 @@ module.exports.updateUserInfos = async (req, res) => {
 
         // generosity days
         generositydays,
+
+        // best partner bonus
+        bestpartnerbonus,
       });
       res.status(200).json({
         message: "User infos updated with success",
