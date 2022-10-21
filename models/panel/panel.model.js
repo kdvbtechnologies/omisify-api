@@ -2,11 +2,10 @@ const mongoose = require("mongoose");
 
 const PanelSchema = new mongoose.Schema(
   {
-
     bestpartnerbonus: {
       type: String,
     },
-    
+
     paymentmethod: {
       type: String,
     },
@@ -56,6 +55,10 @@ const PanelSchema = new mongoose.Schema(
     },
 
     generositydays: {
+      type: String,
+    },
+
+    generositydaysbonus: {
       type: String,
     },
 

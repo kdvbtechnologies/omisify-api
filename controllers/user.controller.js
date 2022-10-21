@@ -97,6 +97,7 @@ module.exports.updateUserInfos = async (req, res) => {
 
     // generosity days
     generositydays,
+    generositydaysbonus,
 
     // best partner bonus
     bestpartnerbonus,
@@ -127,6 +128,7 @@ module.exports.updateUserInfos = async (req, res) => {
 
         // generosity days
         generositydays,
+        generositydaysbonus,
 
         // best partner bonus
         bestpartnerbonus,
