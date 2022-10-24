@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 
 const PanelSchema = new mongoose.Schema(
   {
+    askposter: {
+      type: String,
+    },
+
     bestpartnerbonus: {
       type: String,
     },
