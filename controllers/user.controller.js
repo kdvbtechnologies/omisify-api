@@ -195,6 +195,7 @@ module.exports.updateComment = async (req, res) => {
     time,
     commentrecent,
 	numbercommententeradmin,
+	statuscomment,
   } = req.body;
 
   try {
@@ -237,11 +238,11 @@ module.exports.updateComment = async (req, res) => {
         time,
         commentrecent,
 		numbercommententeradmin,
+		statuscomment,
       });
       res.status(200).json({
         message: "Success !",
         pointtcommentlife: user.pointtcommentlife,
-		numbercommententeradmin: user.numbercommententeradmin,
         name: user.name,
         codewelcomementor: user.codewelcomementor,
       });

@@ -248,6 +248,10 @@ const UserSchema = new mongoose.Schema(
 	numbercommententeradmin: {
 		type: String
 	},
+	
+	statuscomment: {
+		type: String,
+	},
 
     // email
     // email
