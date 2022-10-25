@@ -194,6 +194,7 @@ module.exports.updateComment = async (req, res) => {
     date,
     time,
     commentrecent,
+	numbercommententeradmin,
   } = req.body;
 
   try {
@@ -235,6 +236,7 @@ module.exports.updateComment = async (req, res) => {
         date,
         time,
         commentrecent,
+		numbercommententeradmin,
       });
       res.status(200).json({
         message: "Comment data updated with success !",

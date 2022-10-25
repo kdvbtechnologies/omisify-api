@@ -244,6 +244,10 @@ const UserSchema = new mongoose.Schema(
     commentrecent: {
       type: String,
     },
+	
+	numbercommententeradmin: {
+		type: String
+	},
 
     // email
     // email
