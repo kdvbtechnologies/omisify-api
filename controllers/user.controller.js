@@ -239,8 +239,9 @@ module.exports.updateComment = async (req, res) => {
 		numbercommententeradmin,
       });
       res.status(200).json({
-        message: "Comment data updated with success !",
+        message: "Success !",
         pointtcommentlife: user.pointtcommentlife,
+		numbercommententeradmin: user.numbercommententeradmin,
         name: user.name,
         codewelcomementor: user.codewelcomementor,
       });
