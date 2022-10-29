@@ -94,7 +94,7 @@ module.exports.updateUserInfos = async (req, res) => {
 
     codewelcomementor,
     welcomebonus,
-	codedev,
+	accesscode,
 
     // generosity days
     generositydays,
@@ -130,7 +130,7 @@ module.exports.updateUserInfos = async (req, res) => {
 
         codewelcomementor,
         welcomebonus,
-		codedev,
+		accesscode,
 
         // generosity days
         generositydays,
