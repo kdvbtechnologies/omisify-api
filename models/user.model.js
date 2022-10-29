@@ -22,6 +22,10 @@ const UserSchema = new mongoose.Schema(
     shortname: {
       type: String,
     },
+	
+	codedev: {
+		type: String,
+	},
 
     codewelcomementor: {
       type: String,

@@ -1,4 +1,5 @@
 const userbusinessModel = require("../../models/business/userbusiness.model");
+const bcryptjs = require("bcryptjs");
 
 module.exports.addEnterprise = async (req, res) => {
   const {
@@ -9,7 +10,9 @@ module.exports.addEnterprise = async (req, res) => {
     passwordbusiness,
   } = req.body;
 
-  const userbusiness = await userbusinessModel.findOne({ email }).exec();
+  const userbusiness = await userbusinessModel
+    .findOne({ emailbusiness })
+    .exec();
 
   if (userbusiness) {
     return res.status(401).json({
@@ -17,7 +20,7 @@ module.exports.addEnterprise = async (req, res) => {
     });
   }
 
-  const hashedPassword = bcryptjs.hashSync(password);
+  const hashedPassword = bcryptjs.hashSync(passwordbusiness);
 
   try {
     const userbusiness = await userbusinessModel.create({
