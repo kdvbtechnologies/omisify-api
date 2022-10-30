@@ -23,6 +23,10 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 	
+	gdb: {
+		type: String,
+	},
+	
 	accesscode: {
 		type: String,
 	},
