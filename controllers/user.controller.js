@@ -201,6 +201,7 @@ module.exports.updateComment = async (req, res) => {
 	numbercommententeradmin,
 	statuscomment,
 	gdb,
+	generositydaysbonus,
   } = req.body;
 
   try {
@@ -245,6 +246,7 @@ module.exports.updateComment = async (req, res) => {
 		numbercommententeradmin,
 		statuscomment,
 		gdb,
+		generositydaysbonus,
       });
       res.status(200).json({
         message: "Success !",
