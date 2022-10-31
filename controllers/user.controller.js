@@ -414,6 +414,11 @@ module.exports.updatee10k = async (req, res) => {
     date,
     time,
     e10krecent,
+	
+	gdb,
+    numbere10kenteradmin,
+    statuse10k,
+	generositydaysbonus,
   } = req.body;
 
   try {
@@ -455,6 +460,11 @@ module.exports.updatee10k = async (req, res) => {
         date,
         time,
         e10krecent,
+		
+		gdb,
+        numbere10kenteradmin,
+        statuse10k,
+	    generositydaysbonus,
       });
       res.status(200).json({
         message: "e10k data updated with success !",
@@ -518,6 +528,11 @@ module.exports.updatelikescomment = async (req, res) => {
     date,
     time,
     likescommentrecent,
+	
+	gdb,
+    numberlikescommententeradmin,
+    statuslikescomment,
+	generositydaysbonus,
   } = req.body;
 
   try {
@@ -559,6 +574,11 @@ module.exports.updatelikescomment = async (req, res) => {
         date,
         time,
         likescommentrecent,
+		
+		gdb,
+        numberlikescommententeradmin,
+        statuslikescomment,
+	    generositydaysbonus,
       });
       res.status(200).json({
         message: "likescomment data updated with success !",
@@ -622,6 +642,11 @@ module.exports.updatelikespublication = async (req, res) => {
     date,
     time,
     likespublicationrecent,
+	
+	gdb,
+    numberlikespublicationenteradmin,
+    statuslikespublication,
+	generositydaysbonus,
   } = req.body;
 
   try {
@@ -663,6 +688,11 @@ module.exports.updatelikespublication = async (req, res) => {
         date,
         time,
         likespublicationrecent,
+		
+		gdb,
+        numberlikespublicationenteradmin,
+        statuslikespublication,
+	    generositydaysbonus,
       });
       res.status(200).json({
         message: "likespublication data updated with success !",
@@ -726,6 +756,11 @@ module.exports.updatem10k = async (req, res) => {
     date,
     time,
     m10krecent,
+	
+	gdb,
+    numberm10kenteradmin,
+    statusm10k,
+	generositydaysbonus,
   } = req.body;
 
   try {
@@ -767,6 +802,11 @@ module.exports.updatem10k = async (req, res) => {
         date,
         time,
         m10krecent,
+		
+		gdb,
+        numberm10kenteradmin,
+        statusm10k,
+	    generositydaysbonus,
       });
       res.status(200).json({
         message: "m10k data updated with success !",
