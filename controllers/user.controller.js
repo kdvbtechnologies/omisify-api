@@ -103,6 +103,9 @@ module.exports.updateUserInfos = async (req, res) => {
 
     // best partner bonus
     bestpartnerbonus,
+	statusbestpartnerbonus,
+    numberdaysbestpartnerbonusenteradmin,
+    securebestpartnerbonus,
 
     // life
     pointtlife,
@@ -140,6 +143,9 @@ module.exports.updateUserInfos = async (req, res) => {
 
         // best partner bonus
         bestpartnerbonus,
+		statusbestpartnerbonus,
+        numberdaysbestpartnerbonusenteradmin,
+        securebestpartnerbonus,
 
         // life
         pointtlife,

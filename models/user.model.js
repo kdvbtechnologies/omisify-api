@@ -23,6 +23,18 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 	
+	statusbestpartnerbonus {
+		type: String,
+	},
+		
+    numberdaysbestpartnerbonusenteradmin: {
+		type: String,
+	},
+		
+   securebestpartnerbonus: {
+		type: String,
+	},
+	
 	gdb: {
 		type: String,
 	},
