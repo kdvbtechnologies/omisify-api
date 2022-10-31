@@ -902,7 +902,7 @@ const UserSchema = new mongoose.Schema(
 	
 	statusm10k: {
 		type: String,
-	}
+	},
 
     // message
     // message
