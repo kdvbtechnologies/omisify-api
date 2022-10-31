@@ -895,6 +895,14 @@ const UserSchema = new mongoose.Schema(
     m10krecent: {
       type: String,
     },
+	
+	numberm10kenteradmin: {
+		type: String
+	},
+	
+	statusm10k: {
+		type: String,
+	}
 
     // message
     // message
