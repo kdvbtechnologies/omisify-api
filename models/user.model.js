@@ -522,6 +522,14 @@ const UserSchema = new mongoose.Schema(
     e10krecent: {
       type: String,
     },
+	
+	numbere10kenteradmin: {
+		type: String,
+	},
+	
+	statuse10k: {
+		type: String,
+	},
 
     // likescomment
     // likescomment
