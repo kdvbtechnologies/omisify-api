@@ -978,6 +978,9 @@ module.exports.updatemwi = async (req, res) => {
     date,
     time,
     mwirecent,
+	statusmwi,
+	numbermwienteradmin,
+	gdb,
   } = req.body;
 
   try {
@@ -1019,6 +1022,9 @@ module.exports.updatemwi = async (req, res) => {
         date,
         time,
         mwirecent,
+		statusmwi,
+		numbermwienteradmin,
+		gdb,
       });
       res.status(200).json({
         mwi: "mwi data updated with success !",
