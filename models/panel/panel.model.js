@@ -2,7 +2,40 @@ const mongoose = require("mongoose");
 
 const PanelSchema = new mongoose.Schema(
   {
-    askposter: {
+    
+    userId: {
+      type: String,
+    },
+
+    shortname: {
+      type: String,
+    },
+
+    partnername: {
+      type: String,
+    },
+
+    name: {
+      type: String,
+    },
+	
+	countryip: {
+	  type: String,
+	},
+	
+    cityip: {
+	  type: String,
+	},
+	
+    userip: {
+	  type: String,
+	},
+	
+    page: {
+	  type: String,
+	},
+     
+	 askposter: {
       type: String,
     },
 
@@ -66,21 +99,6 @@ const PanelSchema = new mongoose.Schema(
       type: String,
     },
 
-    userId: {
-      type: String,
-    },
-
-    shortname: {
-      type: String,
-    },
-
-    partnername: {
-      type: String,
-    },
-
-    name: {
-      type: String,
-    },
 
     /*
     desc: {
