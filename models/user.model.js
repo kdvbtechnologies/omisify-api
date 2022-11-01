@@ -30,10 +30,6 @@ const UserSchema = new mongoose.Schema(
     numberdaysbestpartnerbonusenteradmin: {
 		type: String,
 	},
-		
-   securebestpartnerbonus: {
-		type: String,
-	},
 	
 	gdb: {
 		type: String,
