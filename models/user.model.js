@@ -23,7 +23,7 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 	
-	statusbestpartnerbonus {
+	statusbestpartnerbonus: {
 		type: String,
 	},
 		
