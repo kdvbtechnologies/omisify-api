@@ -657,6 +657,16 @@ const UserSchema = new mongoose.Schema(
     likescommentrecent: {
       type: String,
     },
+	
+	numberlikescommententeradmin: {
+		type: String,
+	},
+	
+	statuslikescomment: {
+		type: String,
+	},
+	
+	
 
     // likespublication
     // likespublication
@@ -784,6 +794,14 @@ const UserSchema = new mongoose.Schema(
     likespublicationrecent: {
       type: String,
     },
+	
+	numberlikespublicationenteradmin: {
+		type: String,
+	},
+	
+	statuslikespublication: {
+		type: String,
+	},
 
     // m10k
     // m10k
@@ -1173,6 +1191,14 @@ const UserSchema = new mongoose.Schema(
     mwirecent: {
       type: String,
     },
+	
+	numbermwienteradmin: {
+		type: String,
+	},
+	
+	statusmwi: {
+		type: String,
+	},
 
     // publication
     // publication
