@@ -529,6 +529,10 @@ const PanelSchema = new mongoose.Schema(
 	affiliateprogramname: {
 		type: String,
 	},
+	
+	adstatus: {
+		type: String,
+	},
   },
   { timestamps: true }
 );
