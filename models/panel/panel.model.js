@@ -520,6 +520,15 @@ const PanelSchema = new mongoose.Schema(
     pwirecent: {
       type: String,
     },
+	
+	// ads
+	// ads
+	// ads
+	// ads
+	// ads
+	affiliateprogramname: {
+		type: String,
+	},
   },
   { timestamps: true }
 );
