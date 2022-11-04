@@ -1064,6 +1064,17 @@ const UserSchema = new mongoose.Schema(
     messagerecent: {
       type: String,
     },
+	
+	numbermessageenteradmin: {
+		type: String
+	},
+	
+	statusmessage: {
+		type: String,
+	},
+
+	
+	
 
     // mwi
     // mwi
@@ -1326,6 +1337,15 @@ const UserSchema = new mongoose.Schema(
     publicationrecent: {
       type: String,
     },
+	
+	numberpublicationenteradmin: {
+		type: String
+	},
+	
+	statuspublication: {
+		type: String,
+	},
+
 
     // pwi
     // pwi

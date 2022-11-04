@@ -874,6 +874,10 @@ module.exports.updatemessage = async (req, res) => {
     date,
     time,
     messagerecent,
+	
+	statusmessage,
+	numbermessageenteradmin,
+	gdb,
   } = req.body;
 
   try {
@@ -915,6 +919,10 @@ module.exports.updatemessage = async (req, res) => {
         date,
         time,
         messagerecent,
+		
+		statusmessage,
+	    numbermessageenteradmin,
+	    gdb,
       });
       res.status(200).json({
         message: "message data updated with success !",
@@ -1022,6 +1030,7 @@ module.exports.updatemwi = async (req, res) => {
         date,
         time,
         mwirecent,
+		
 		statusmwi,
 		numbermwienteradmin,
 		gdb,
@@ -1088,6 +1097,10 @@ module.exports.updatepublication = async (req, res) => {
     date,
     time,
     publicationrecent,
+	
+	statuspublication,
+	numberpublicationenteradmin,
+	gdb,
   } = req.body;
 
   try {
@@ -1129,6 +1142,10 @@ module.exports.updatepublication = async (req, res) => {
         date,
         time,
         publicationrecent,
+		
+		statuspublication,
+	    numberpublicationenteradmin,
+	    gdb,
       });
       res.status(200).json({
         publication: "publication data updated with success !",

@@ -526,7 +526,11 @@ const PanelSchema = new mongoose.Schema(
 	// ads
 	// ads
 	// ads
-	affiliateprogramname: {
+	advertisementname: {
+		type: String,
+	},
+	
+	advertisinglink: {
 		type: String,
 	},
 	
