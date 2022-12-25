@@ -32,6 +32,10 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
 
+    yourWhatsappNumber: {
+      type: String,
+    },
+
     //
 
     statusbestpartnerbonus: {

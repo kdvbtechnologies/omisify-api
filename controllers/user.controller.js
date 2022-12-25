@@ -103,12 +103,13 @@ module.exports.updateUserInfos = async (req, res) => {
 
     // best partner bonus
     bestpartnerbonus,
-	  statusbestpartnerbonus,
+    statusbestpartnerbonus,
     numberdaysbestpartnerbonusenteradmin,
 
     // generation connected
     nbreDePointsListesDeContact,
     nbreDePersonnesListesDeContact,
+    yourWhatsappNumber,
 
     // life
     pointtlife,
@@ -146,12 +147,13 @@ module.exports.updateUserInfos = async (req, res) => {
 
         // best partner bonus
         bestpartnerbonus,
-		    statusbestpartnerbonus,
+        statusbestpartnerbonus,
         numberdaysbestpartnerbonusenteradmin,
 
         // generation connected
         nbreDePointsListesDeContact,
         nbreDePersonnesListesDeContact,
+        yourWhatsappNumber,
 
         // life
         pointtlife,
@@ -210,10 +212,10 @@ module.exports.updateComment = async (req, res) => {
     date,
     time,
     commentrecent,
-	numbercommententeradmin,
-	statuscomment,
-	gdb,
-	generositydaysbonus,
+    numbercommententeradmin,
+    statuscomment,
+    gdb,
+    generositydaysbonus,
   } = req.body;
 
   try {
@@ -255,10 +257,10 @@ module.exports.updateComment = async (req, res) => {
         date,
         time,
         commentrecent,
-		numbercommententeradmin,
-		statuscomment,
-		gdb,
-		generositydaysbonus,
+        numbercommententeradmin,
+        statuscomment,
+        gdb,
+        generositydaysbonus,
       });
       res.status(200).json({
         message: "Success !",
@@ -426,11 +428,11 @@ module.exports.updatee10k = async (req, res) => {
     date,
     time,
     e10krecent,
-	
-	gdb,
+
+    gdb,
     numbere10kenteradmin,
     statuse10k,
-	generositydaysbonus,
+    generositydaysbonus,
   } = req.body;
 
   try {
@@ -472,11 +474,11 @@ module.exports.updatee10k = async (req, res) => {
         date,
         time,
         e10krecent,
-		
-		gdb,
+
+        gdb,
         numbere10kenteradmin,
         statuse10k,
-	    generositydaysbonus,
+        generositydaysbonus,
       });
       res.status(200).json({
         message: "e10k data updated with success !",
@@ -540,11 +542,11 @@ module.exports.updatelikescomment = async (req, res) => {
     date,
     time,
     likescommentrecent,
-	
-	gdb,
+
+    gdb,
     numberlikescommententeradmin,
     statuslikescomment,
-	generositydaysbonus,
+    generositydaysbonus,
   } = req.body;
 
   try {
@@ -586,11 +588,11 @@ module.exports.updatelikescomment = async (req, res) => {
         date,
         time,
         likescommentrecent,
-		
-		gdb,
+
+        gdb,
         numberlikescommententeradmin,
         statuslikescomment,
-	    generositydaysbonus,
+        generositydaysbonus,
       });
       res.status(200).json({
         message: "likescomment data updated with success !",
@@ -654,11 +656,11 @@ module.exports.updatelikespublication = async (req, res) => {
     date,
     time,
     likespublicationrecent,
-	
-	gdb,
+
+    gdb,
     numberlikespublicationenteradmin,
     statuslikespublication,
-	generositydaysbonus,
+    generositydaysbonus,
   } = req.body;
 
   try {
@@ -700,11 +702,11 @@ module.exports.updatelikespublication = async (req, res) => {
         date,
         time,
         likespublicationrecent,
-		
-		gdb,
+
+        gdb,
         numberlikespublicationenteradmin,
         statuslikespublication,
-	    generositydaysbonus,
+        generositydaysbonus,
       });
       res.status(200).json({
         message: "likespublication data updated with success !",
@@ -768,11 +770,11 @@ module.exports.updatem10k = async (req, res) => {
     date,
     time,
     m10krecent,
-	
-	gdb,
+
+    gdb,
     numberm10kenteradmin,
     statusm10k,
-	generositydaysbonus,
+    generositydaysbonus,
   } = req.body;
 
   try {
@@ -814,11 +816,11 @@ module.exports.updatem10k = async (req, res) => {
         date,
         time,
         m10krecent,
-		
-		gdb,
+
+        gdb,
         numberm10kenteradmin,
         statusm10k,
-	    generositydaysbonus,
+        generositydaysbonus,
       });
       res.status(200).json({
         message: "m10k data updated with success !",
@@ -882,10 +884,10 @@ module.exports.updatemessage = async (req, res) => {
     date,
     time,
     messagerecent,
-	
-	statusmessage,
-	numbermessageenteradmin,
-	gdb,
+
+    statusmessage,
+    numbermessageenteradmin,
+    gdb,
   } = req.body;
 
   try {
@@ -927,10 +929,10 @@ module.exports.updatemessage = async (req, res) => {
         date,
         time,
         messagerecent,
-		
-		statusmessage,
-	    numbermessageenteradmin,
-	    gdb,
+
+        statusmessage,
+        numbermessageenteradmin,
+        gdb,
       });
       res.status(200).json({
         message: "message data updated with success !",
@@ -994,9 +996,9 @@ module.exports.updatemwi = async (req, res) => {
     date,
     time,
     mwirecent,
-	statusmwi,
-	numbermwienteradmin,
-	gdb,
+    statusmwi,
+    numbermwienteradmin,
+    gdb,
   } = req.body;
 
   try {
@@ -1038,10 +1040,10 @@ module.exports.updatemwi = async (req, res) => {
         date,
         time,
         mwirecent,
-		
-		statusmwi,
-		numbermwienteradmin,
-		gdb,
+
+        statusmwi,
+        numbermwienteradmin,
+        gdb,
       });
       res.status(200).json({
         mwi: "mwi data updated with success !",
@@ -1105,10 +1107,10 @@ module.exports.updatepublication = async (req, res) => {
     date,
     time,
     publicationrecent,
-	
-	statuspublication,
-	numberpublicationenteradmin,
-	gdb,
+
+    statuspublication,
+    numberpublicationenteradmin,
+    gdb,
   } = req.body;
 
   try {
@@ -1150,10 +1152,10 @@ module.exports.updatepublication = async (req, res) => {
         date,
         time,
         publicationrecent,
-		
-		statuspublication,
-	    numberpublicationenteradmin,
-	    gdb,
+
+        statuspublication,
+        numberpublicationenteradmin,
+        gdb,
       });
       res.status(200).json({
         publication: "publication data updated with success !",
