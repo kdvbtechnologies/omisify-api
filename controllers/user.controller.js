@@ -94,8 +94,8 @@ module.exports.updateUserInfos = async (req, res) => {
 
     codewelcomementor,
     welcomebonus,
-	accesscode,
-	gdb,
+    accesscode,
+    gdb,
 
     // generosity days
     generositydays,
@@ -103,8 +103,12 @@ module.exports.updateUserInfos = async (req, res) => {
 
     // best partner bonus
     bestpartnerbonus,
-	statusbestpartnerbonus,
+	  statusbestpartnerbonus,
     numberdaysbestpartnerbonusenteradmin,
+
+    // generation connected
+    nbreDePointsListesDeContact,
+    nbreDePersonnesListesDeContact,
 
     // life
     pointtlife,
@@ -133,8 +137,8 @@ module.exports.updateUserInfos = async (req, res) => {
 
         codewelcomementor,
         welcomebonus,
-		accesscode,
-		gdb,
+        accesscode,
+        gdb,
 
         // generosity days
         generositydays,
@@ -142,8 +146,12 @@ module.exports.updateUserInfos = async (req, res) => {
 
         // best partner bonus
         bestpartnerbonus,
-		statusbestpartnerbonus,
+		    statusbestpartnerbonus,
         numberdaysbestpartnerbonusenteradmin,
+
+        // generation connected
+        nbreDePointsListesDeContact,
+        nbreDePersonnesListesDeContact,
 
         // life
         pointtlife,

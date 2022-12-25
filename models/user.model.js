@@ -22,22 +22,33 @@ const UserSchema = new mongoose.Schema(
     shortname: {
       type: String,
     },
-	
-	statusbestpartnerbonus: {
-		type: String,
-	},
-		
+
+    // generation connected
+    nbreDePointsListesDeContact: {
+      type: String,
+    },
+
+    nbreDePersonnesListesDeContact: {
+      type: String,
+    },
+
+    //
+
+    statusbestpartnerbonus: {
+      type: String,
+    },
+
     numberdaysbestpartnerbonusenteradmin: {
-		type: String,
-	},
-	
-	gdb: {
-		type: String,
-	},
-	
-	accesscode: {
-		type: String,
-	},
+      type: String,
+    },
+
+    gdb: {
+      type: String,
+    },
+
+    accesscode: {
+      type: String,
+    },
 
     codewelcomementor: {
       type: String,
@@ -260,14 +271,14 @@ const UserSchema = new mongoose.Schema(
     commentrecent: {
       type: String,
     },
-	
-	numbercommententeradmin: {
-		type: String
-	},
-	
-	statuscomment: {
-		type: String,
-	},
+
+    numbercommententeradmin: {
+      type: String,
+    },
+
+    statuscomment: {
+      type: String,
+    },
 
     // email
     // email
@@ -522,14 +533,14 @@ const UserSchema = new mongoose.Schema(
     e10krecent: {
       type: String,
     },
-	
-	numbere10kenteradmin: {
-		type: String,
-	},
-	
-	statuse10k: {
-		type: String,
-	},
+
+    numbere10kenteradmin: {
+      type: String,
+    },
+
+    statuse10k: {
+      type: String,
+    },
 
     // likescomment
     // likescomment
@@ -657,16 +668,14 @@ const UserSchema = new mongoose.Schema(
     likescommentrecent: {
       type: String,
     },
-	
-	numberlikescommententeradmin: {
-		type: String,
-	},
-	
-	statuslikescomment: {
-		type: String,
-	},
-	
-	
+
+    numberlikescommententeradmin: {
+      type: String,
+    },
+
+    statuslikescomment: {
+      type: String,
+    },
 
     // likespublication
     // likespublication
@@ -794,14 +803,14 @@ const UserSchema = new mongoose.Schema(
     likespublicationrecent: {
       type: String,
     },
-	
-	numberlikespublicationenteradmin: {
-		type: String,
-	},
-	
-	statuslikespublication: {
-		type: String,
-	},
+
+    numberlikespublicationenteradmin: {
+      type: String,
+    },
+
+    statuslikespublication: {
+      type: String,
+    },
 
     // m10k
     // m10k
@@ -929,14 +938,14 @@ const UserSchema = new mongoose.Schema(
     m10krecent: {
       type: String,
     },
-	
-	numberm10kenteradmin: {
-		type: String
-	},
-	
-	statusm10k: {
-		type: String,
-	},
+
+    numberm10kenteradmin: {
+      type: String,
+    },
+
+    statusm10k: {
+      type: String,
+    },
 
     // message
     // message
@@ -1064,17 +1073,14 @@ const UserSchema = new mongoose.Schema(
     messagerecent: {
       type: String,
     },
-	
-	numbermessageenteradmin: {
-		type: String
-	},
-	
-	statusmessage: {
-		type: String,
-	},
 
-	
-	
+    numbermessageenteradmin: {
+      type: String,
+    },
+
+    statusmessage: {
+      type: String,
+    },
 
     // mwi
     // mwi
@@ -1202,14 +1208,14 @@ const UserSchema = new mongoose.Schema(
     mwirecent: {
       type: String,
     },
-	
-	numbermwienteradmin: {
-		type: String,
-	},
-	
-	statusmwi: {
-		type: String,
-	},
+
+    numbermwienteradmin: {
+      type: String,
+    },
+
+    statusmwi: {
+      type: String,
+    },
 
     // publication
     // publication
@@ -1337,15 +1343,14 @@ const UserSchema = new mongoose.Schema(
     publicationrecent: {
       type: String,
     },
-	
-	numberpublicationenteradmin: {
-		type: String
-	},
-	
-	statuspublication: {
-		type: String,
-	},
 
+    numberpublicationenteradmin: {
+      type: String,
+    },
+
+    statuspublication: {
+      type: String,
+    },
 
     // pwi
     // pwi
